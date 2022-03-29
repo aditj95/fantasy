@@ -1,0 +1,8 @@
+src/serviceWorker.ts
+src/setupTests.js
+*.yml
+*.md
+build
+node_modules
+public 
+coverage
