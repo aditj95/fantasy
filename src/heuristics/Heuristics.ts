@@ -105,7 +105,17 @@ const computeBatter = (batter: Batting) => {
 
     //duck
     if (batter.r == 0) {
-        points -= 20;
+        // check batter not out
+        if (
+            !(
+                batter['dismissal-text'] == null ||
+                batter['dismissal-text'].toLowerCase() == 'not out' ||
+                batter['dismissal-text'].toLowerCase() == 'notout' ||
+                batter.dismissal == null
+            )
+        ) {
+            points -= 20;
+        }
     }
 
     //sr
