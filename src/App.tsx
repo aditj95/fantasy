@@ -42,9 +42,6 @@ function PlayerComponent({ player, point }: { player: Player; point: Points }) {
     }
     return (
         <tr>
-            <td>
-                <img src={player.playerImg} width="50" />
-            </td>
             <td>{player.name}</td>
             <td>{point.batting}</td>
             <td>{point.bowling}</td>
@@ -82,7 +79,6 @@ const Table = ({ squad, playerPoints }: { squad: SquadData; playerPoints: Record
             <table style={{ borderCollapse: 'separate', width: '100%' }}>
                 <thead>
                     <tr>
-                        <th></th>
                         <th>Name</th>
                         <th>Batting</th>
                         <th>Bowling</th>
