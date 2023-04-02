@@ -61,8 +61,11 @@ const computeBowler = (bowler: Bowling) => {
         if (bowler.eco >= 9 && bowler.eco < 10) {
             points -= 15;
         }
-        if (bowler.eco >= 10) {
+        if (bowler.eco >= 10 && bowler.eco < 11) {
             points -= 20;
+        }
+        if (bowler.eco >= 11) {
+            points -= 25;
         }
     }
     //milestone
@@ -132,8 +135,16 @@ const computeBatter = (batter: Batting) => {
             points += 15;
         }
 
-        if (batter.sr >= 150) {
+        if (batter.sr >= 150 && batter.sr < 175) {
             points += 20;
+        }
+        
+        if (batter.sr >= 175 && batter.sr < 200) {
+            points += 25;
+        }
+        
+        if (batter.sr >= 200) {
+            points += 30;
         }
     }
 
