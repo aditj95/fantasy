@@ -8,7 +8,7 @@ import { computeScore, Points } from './heuristics/Heuristics';
 
 const seriesInfo = async () => {
     const req = await axios.post<SeriesData>(
-        'https://api.cricapi.com/v1/series_info?apikey=ede46d11-0d95-4ade-8bec-760bc8c4f842&offset=0&id=47b54677-34de-4378-9019-154e82b9cc1a'
+        'https://api.cricapi.com/v1/series_info?apikey=ede46d11-0d95-4ade-8bec-760bc8c4f842&offset=0&id=c75f8952-74d4-416f-b7b4-7da4b4e3ae6e'
     );
     return req.data;
 };
